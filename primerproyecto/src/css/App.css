@@ -1,0 +1,71 @@
+#carouselExampleIndicators {
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+  position: relative;
+}
+
+#carouselExampleIndicators .carousel-inner {
+  height: 500% !important;
+  overflow: hidden;
+  position: relative;
+}
+
+#carouselExampleIndicators .carousel-item {
+  height: 500% !important;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transition: none !important;
+}
+#carouselExampleIndicators .carousel-item.active {
+  position: relative;
+  z-index: 1;
+}
+
+#carouselExampleIndicators .carousel-item img {
+  height: 500px !important;
+  width: 100% !important;
+  object-fit: cover !important;
+  transition: none !important;
+  display: block;
+}
+
+.productos {
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+  font-size: 36px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-family: cursive;
+
+}
+.producto {
+  border: 1px solid #ccc;
+  padding: 10px;
+  width: 30%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  margin: 40px;
+}
+.producto:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 16px rgba(0,0,0,0.2);
+}
+
+.producto2{
+  border: 1px solid #ccc;
+  padding: 10px;
+  width: 30%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  margin: 30px;
+}
+
+.producto2:hover{
+    transform: translateY(-10px);
+  box-shadow: 0 15px 16px rgba(0,0,0,0.2);
+
+}

@@ -1,0 +1,69 @@
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  padding: 5px 20px;
+  background-color: #FFE4E1;
+  color: #fff;
+  font-family:cursive;
+  font-size: 40;
+  border-bottom: 1px solid #FF69B4;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 24px;
+  margin-right: auto;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-link {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #FF69B4;
+  transition: color 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  height: 100%;
+}
+
+.nav-link:hover {
+  color: #E0FFFF;
+}
+
+.search-input {
+  margin-left: 20px;
+  padding: 5px 10px;
+  border-radius: 4px;
+  border: 2px solid #DDA0DD;
+  background-color: #FFF0F5;
+  color: black;
+}
+
+.icono-lupa {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+}
+
+.lupa {
+  width: 40px;
+  height: 40px;
+  margin-left: 8px;
+  cursor: pointer;
+}
+.lupa:hover {
+  transform: scale(1.2);
+}
