@@ -11,6 +11,7 @@ import ame from './assets/ame.png';
 import melu from './assets/melu.png';
 import { MostrarProductos } from './props/productos.jsx';
 import { productosprops } from './props/datos.js';
+import Formulario from './componentes/formulario.jsx';
 
 function App() {
   // Asignar imágenes a cada producto
@@ -77,6 +78,7 @@ function App() {
           />
         ))}
       </section>
+      <Formulario/>
       <Footer />
     </>
   );
