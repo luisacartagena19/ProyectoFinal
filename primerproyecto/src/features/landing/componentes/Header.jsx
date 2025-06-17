@@ -1,8 +1,8 @@
 import React from 'react';
 
-import '../css/Header.css';
-import logoSub from '../assets/logoSub.png';
-import lupa from '../assets/lupa.png';
+import '../../../shared/estiloLanding.css';
+import logoSub from '../../../assets/logoSub.png';
+import lupa from '../../../assets/lupa.png';
 
 function Header() {
   return (

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Swal from 'sweetalert2';
-import '../css/Formulario.css';
+import '../../../shared/estiloLanding.css';
 
 const Formulario = () => {
   const [Datos, setDatos] = useState({

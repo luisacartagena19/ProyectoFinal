@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { ProductContext } from '../hooks/ProductContext';
+import { ProductContext } from '../hooks/ProductContext.jsx';
 import { MostrarProductos } from './productos.jsx';
 
 export const InformacionProductos = ({ startPosition = 0, endPosition }) => {

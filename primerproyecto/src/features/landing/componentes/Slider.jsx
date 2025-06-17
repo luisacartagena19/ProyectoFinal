@@ -1,7 +1,7 @@
 import React from 'react';
-import imagen10 from '../assets/imagen10.png';
-import imagen2 from '../assets/imagen2.png';
-import imagen9 from '../assets/imagen9.png';
+import imagen10 from '../../../assets/imagen10.png';
+import imagen2 from '../../../assets/imagen2.png';
+import imagen9 from '../../../assets/imagen9.png';
 
 function Slider() {
   return (

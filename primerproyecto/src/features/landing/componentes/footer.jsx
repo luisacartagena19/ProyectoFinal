@@ -1,7 +1,7 @@
 import React from 'react';
-import '../css/Footer.css';
-import facebook from '../assets/facebook.png';
-import instagram from '../assets/instagram.png';
+import '../../../shared/estiloLanding.css';
+import facebook from '../../../assets/facebook.png';
+import instagram from '../../../assets/instagram.png';
 
 const Footer = () => {
   return (

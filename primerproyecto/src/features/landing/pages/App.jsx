@@ -1,19 +1,19 @@
-import './css/App.css'
-import Header from './componentes/Header.jsx'
-import Slider from './componentes/Slider.jsx'
-import Footer from './componentes/footer.jsx'
-import imagen4 from './assets/imagen4.png';
-import imagen11 from './assets/imagen11.png';
-import imagen12 from './assets/imagen12.png';
-import samy from './assets/samy.png';
-import bloom from './assets/bloom.png';
-import ame from './assets/ame.png';
-import melu from './assets/melu.png';
-import { MostrarProductos } from './props/productos.jsx';
-import { productosprops } from './props/datos.js';
-import Formulario from './componentes/formulario.jsx';
-import { ProductProvider } from './hooks/ProductContext';
-import { InformacionProductos } from './props/informacionProductos.jsx';
+import '../../../shared/estiloLanding.css'
+import Header from '../componentes/Header.jsx'
+import Slider from '../componentes/Slider.jsx'
+import Footer from '../componentes/footer.jsx'
+import imagen4 from '../../../assets/imagen4.png';
+import imagen11 from '../../../assets/imagen11.png';
+import imagen12 from '../../../assets/imagen12.png';
+import samy from '../../../assets/samy.png';
+import bloom from '../../../assets/bloom.png';
+import ame from '../../../assets/ame.png';
+import melu from '../../../assets/melu.png';
+import { MostrarProductos } from '../componentes/productos.jsx';
+import { productosprops } from '../data/datos.js';
+import Formulario from '../componentes/formulario.jsx';
+import { ProductProvider } from '../hooks/ProductContext';
+import { InformacionProductos } from '../componentes/informacionProductos.jsx';
 
 function App() {
   // Asignar imágenes a cada producto
