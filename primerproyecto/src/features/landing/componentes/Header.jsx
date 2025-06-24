@@ -3,6 +3,7 @@ import React from 'react';
 import '../../../shared/estiloLanding.css';
 import logoSub from '../../../assets/logoSub.png';
 import lupa from '../../../assets/lupa.png';
+import { CartButton } from '../../cart/componentes/cartButton';
 
 function Header() {
   return (
@@ -16,12 +17,14 @@ function Header() {
         <a href="#contacto" className="nav-link">Contacto</a>
       </nav>
       <div className="icono-lupa">
+         <CartButton />
         <input 
           type="text" 
           placeholder="Buscar..." 
           className="search-input"
         />
         <img src={lupa} alt="Icono de lupa" className="lupa" />
+       
       </div>
     </header>
   );

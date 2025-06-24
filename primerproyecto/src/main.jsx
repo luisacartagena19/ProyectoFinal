@@ -3,6 +3,8 @@ import { createRoot } from 'react-dom/client'
 import App from './features/landing/pages/App.jsx'
 
 
+
+
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <App />
