@@ -1,6 +1,6 @@
 import React from 'react';
 import { useCart } from '../hooks/cartContext';
-import './cart.css';
+import '../../../shared/estiloLanding.css';
 
 export const Cart = () => {
     const { 
@@ -21,7 +21,7 @@ export const Cart = () => {
     return (
         <div className="cart-overlay">
             <div className="cart-sidebar" ref={cartRef}>
-                {/* 📝 Header del carrito */}
+           
                 <div className="cart-header">
                     <h3>
                         <i className="bi bi-cart3"></i>
@@ -35,7 +35,7 @@ export const Cart = () => {
                     </button>
                 </div>
 
-                {/* 📦 Contenido del carrito */}
+                {/* Contenido del carrito */}
                 <div className="cart-content">
                     {items.length === 0 ? (
                         // Estado vacío
@@ -89,19 +89,19 @@ export const Cart = () => {
 const CartItem = ({ item, onUpdateQuantity, onRemove }) => {
     return (
         <div className="cart-item">
-            {/* 🖼️ Imagen del producto */}
+            {/* Imagen del producto */}
             <img 
                 src={item.image} 
                 alt={item.title}
                 className="cart-item-image"
             />
             
-            {/* 📋 Detalles del producto */}
+            {/* Detalles del producto */}
             <div className="cart-item-details">
                 <h6 className="cart-item-title">{item.title}</h6>
                 <p className="cart-item-price">${item.price}</p>
                 
-                {/* 🔢 Controles de cantidad */}
+                {/*  Controles de cantidad */}
                 <div className="quantity-controls">
                     <button 
                         className="btn btn-outline-secondary btn-sm"
@@ -118,13 +118,13 @@ const CartItem = ({ item, onUpdateQuantity, onRemove }) => {
                     </button>
                 </div>
                 
-                {/* 💰 Subtotal */}
+                {/* Subtotal */}
                 <div className="item-total">
                     Subtotal: ${(item.price * item.quantity).toFixed(2)}
                 </div>
             </div>
             
-            {/* ❌ Botón eliminar */}
+            {/* Botón eliminar */}
             <button 
                 className="btn btn-outline-danger btn-sm remove-btn"
                 onClick={() => onRemove(item.id)}

@@ -1,22 +1,22 @@
-import '../../../shared/estiloLanding.css'
-import Header from '../componentes/Header.jsx'
-import Slider from '../componentes/Slider.jsx'
-import Footer from '../componentes/footer.jsx'
-import imagen4 from '../../../assets/imagen4.png';
-import imagen11 from '../../../assets/imagen11.png';
-import imagen12 from '../../../assets/imagen12.png';
-import samy from '../../../assets/samy.png';
-import bloom from '../../../assets/bloom.png';
-import ame from '../../../assets/ame.png';
-import melu from '../../../assets/melu.png';
-import { MostrarProductos } from '../componentes/productos.jsx';
-import { productosprops } from '../data/datos.js';
-import Formulario from '../componentes/formulario.jsx';
-import { ProductProvider } from '../hooks/ProductContext';
-import { InformacionProductos } from '../componentes/informacionProductos.jsx';
-import { CartProvider } from '../../cart/hooks/cartContext';
-import { Cart } from '../../cart/componentes/cart.jsx';
-function App() {
+import '../../shared/estiloLanding.css'
+import Header from './componentes/Header.jsx'
+import Slider from './componentes/Slider.jsx'
+import Footer from './componentes/footer.jsx'
+import imagen4 from '../../assets/imagen4.png';
+import imagen11 from '../../assets/imagen11.png';
+import imagen12 from '../../assets/imagen12.png';
+import samy from '../../assets/samy.png';
+import bloom from '../../assets/bloom.png';
+import ame from '../../assets/ame.png';
+import melu from '../../assets/melu.png';
+import { MostrarProductos } from './componentes/productos.jsx';
+import { productosprops } from '../../shared/data/datos.js';
+import Formulario from './componentes/formulario.jsx';
+import { ProductProvider } from './hooks/ProductContext.jsx';
+import { InformacionProductos } from './componentes/informacionProductos.jsx';
+import { CartProvider } from '../cart/hooks/cartContext.jsx';
+import { Cart } from '../cart/componentes/cart.jsx';
+function Landing() {
   // Asignar imágenes a cada producto
   // eso si me toco pedirle ayuda a la IA porque no me querian aparecer las imagenes, pero de reso si lo hice yo. Es una aclaracion jaja
   const productosConImagenes = productosprops.map((producto, index) => {
@@ -90,4 +90,4 @@ function App() {
   );
 }
 
-export default App
+export default Landing

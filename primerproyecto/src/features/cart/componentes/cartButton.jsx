@@ -15,7 +15,7 @@ export const CartButton = () => {
                 onMouseEnter={e => e.currentTarget.classList.replace('text-danger', 'text-white')}
                 onMouseLeave={e => e.currentTarget.classList.replace('text-white', 'text-danger')}
             ></i>
-            {/* 🔢 Badge con cantidad (solo si hay productos) */}
+            {/* Badge con cantidad (solo si hay productos) */}
             {itemCount > 0 && (
                 <span className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
                     {itemCount}
