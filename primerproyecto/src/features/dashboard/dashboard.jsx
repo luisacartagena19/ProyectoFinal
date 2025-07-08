@@ -1,5 +1,5 @@
-import { useAuth } from '../../auth/hooks/useAuth';
-import ListaProductos from '../pages/listaProductos';
+import { useAuth } from '../auth/hooks/useAuth';
+import ProductPage from './pages/productPage';
 
 const Dashboard = () => {
     const { user, logout } = useAuth();
@@ -26,7 +26,7 @@ const Dashboard = () => {
                     <p><strong>Rol:</strong> {user?.role}</p>
                      
                 </div>
-                <ListaProductos />
+                <ProductPage/>
             </div>
         </div>
 

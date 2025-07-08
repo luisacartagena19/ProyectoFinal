@@ -10,7 +10,7 @@ import bloom from '../../assets/bloom.png';
 import ame from '../../assets/ame.png';
 import melu from '../../assets/melu.png';
 import { MostrarProductos } from './componentes/productos.jsx';
-import { productosprops } from '../../shared/data/datos.js';
+import { productosprops } from './data/datos.js';
 import Formulario from './componentes/formulario.jsx';
 import { ProductProvider } from './hooks/ProductContext.jsx';
 import { InformacionProductos } from './componentes/informacionProductos.jsx';
